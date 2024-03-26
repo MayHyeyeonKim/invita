@@ -1,0 +1,16 @@
+/* src/MainPage.css */
+.main-page {
+    padding: 20px;
+    background-color: #dad8d8;
+  }
+  
+  .main-page section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .main-page section h2 {
+    margin-top: 0;
+  }
+  
