@@ -1,0 +1,11 @@
+/* Browser */
+
+p {
+    margin: 0;
+  }
+  
+
+.browser {
+    max-width: 100%;
+    height: auto; 
+  }

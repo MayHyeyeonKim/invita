@@ -1,23 +1,106 @@
-/* src/components/Header.css */
-.header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  flex-grow: 0;
+  margin-right: auto; 
+}
+
+.menu {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em; 
+}
+
+.menu a {
+  text-decoration: none;
+  margin-right: 1em;
+  color: #333;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+.actions button {
+  padding: 0.5em 1em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.hero button {
+  background: #000;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #007bff;
+}
+
+/* Image slider placeholder styles */
+.image-slider {
+  height: 300px; /* adjust as necessary */
+  background: #f4f4f4;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .menu, .actions {
+    display: none; /* Hide on smaller devices, could use a hamburger menu instead */
   }
-  
-  .header nav ul {
-    list-style-type: none;
-    padding: 0;
+
+  .logo {
+    margin-right: auto; /* Center logo on smaller screens */
   }
-  
-  .header nav ul li {
-    display: inline;
-    margin: 0 10px;
+}
+
+/* Responsive button adjustments */
+@media (max-width: 480px) {
+  .hero button {
+    width: 100%;
+    padding: 1em;
   }
-  
-  .header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+}

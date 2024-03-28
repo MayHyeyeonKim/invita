@@ -1,16 +1,48 @@
-/* src/MainPage.css */
-.main-page {
-    padding: 20px;
-    background-color: #dad8d8;
+/* Main layout styles */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+
+.left-content,
+.right-content {
+  flex-basis: 48%; /* Adjusts the base width of each side */
+}
+
+/* Ensure .hero is inside .left-content and the image placeholder is inside .right-content */
+
+/* Hero section styles */
+.hero {
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Image slider styles */
+.image-slider {
+  height: 300px; /* Adjust the height as needed */
+  border: 1px solid #ccc; /* Gives a border to the placeholder */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Apply responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
   }
-  
-  .main-page section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #ffffff;
+
+  .left-content,
+  .right-content {
+    flex-basis: 100%;
   }
-  
-  .main-page section h2 {
-    margin-top: 0;
+
+  /* You might want to adjust text alignment on smaller screens */
+  .hero {
+    text-align: center;
   }
-  
+}
+
+/* Add any additional responsive adjustments as needed */
